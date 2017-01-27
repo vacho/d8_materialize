@@ -3,7 +3,7 @@ materialize:
   header: true
   css:
     theme:
-      vendor/materialize/css/materialize.min.css: {}
+      vendor/materialize/css/materialize.css: {}
   js:
     vendor/materialize/js/materialize.js: {}
   dependencies:
