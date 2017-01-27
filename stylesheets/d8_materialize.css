@@ -1,5 +1,5 @@
 .branding-block {
-    padding-top: 10px;
+    padding-top: 2px;
 }
 
 .path-frontpage.d8_blog .region-content {
@@ -31838,3 +31838,48 @@ footer.page-footer .menu--footer a {
 .form-type-textarea.input-field label {
     top: -2.2rem;
 }
+
+
+/*
+ CACSA CUSTOMIZATIONS
+*/
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+.top-nav {
+    height: 64px;
+    box-shadow: none;
+}
+
+.region-header-left {
+    width: 45em;
+}
+
+.region-header-left div {
+    float: left;
+}
+
+#block-d8-materialize-branding {
+    position: absolute;
+}
+
+#block-d8-materialize-main-menu {
+    position: relative;
+    left: 11.8em;
+}
+
+#nav-mobile a:hover {
+    border-bottom-style: solid;
+    border-bottom-color: yellow;
+}
+
+#nav-mobile a:active {
+    border-bottom-style: solid;
+    border-bottom-color: red;
+}
+
+
+
