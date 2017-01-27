@@ -31872,14 +31872,18 @@ footer.page-footer .menu--footer a {
 }
 
 #nav-mobile a:hover {
+    color: white;
     border-bottom-style: solid;
     border-bottom-color: yellow;
 }
 
-#nav-mobile a:active {
+#nav-mobile a.is-active {
+    color: white;
     border-bottom-style: solid;
-    border-bottom-color: red;
+    border-bottom-color: yellow;
 }
 
-
+#nav-mobile a {
+    color: #AED581;
+}
 

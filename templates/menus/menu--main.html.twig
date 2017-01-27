@@ -26,7 +26,17 @@
 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 <ul id="nav-mobile" class="left hide-on-med-and-down">
   {% for item in items %}
-    {{ menu.rendli(item) }}
+    {%
+    set classes = [
+    'menu-item',
+    item.is_expanded ? 'menu-item--expanded',
+    item.is_collapsed ? 'menu-item--collapsed',
+    item.in_active_trail ? 'menu-item--active-trail',
+    ]
+    %}
+    <li {{ item.attributes.addClass(classes) }}>
+      {{ link(item.title, item.url) }}
+    </li>
   {% endfor %}
 </ul>
 <ul class="side-nav" id="mobile-demo">
