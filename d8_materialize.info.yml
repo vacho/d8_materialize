@@ -11,25 +11,15 @@ libraries:
   - d8_materialize/materialize
   - d8_materialize/d8_materialize_custom
 
-stylesheets-remove:
-#  - '@stable/*'
-#  - core/assets/vendor/jquery.ui/themes/base/core.css
-#  - core/assets/vendor/jquery.ui/themes/base/button.css
-#  - core/assets/vendor/jquery.ui/themes/base/resizable.css
-#  - core/assets/vendor/jquery.ui/themes/base/dialog.css
-#  - core/assets/vendor/normalize-css/normalize.css
-#  - core/modules/system/css/components/container-inline.module.css
-#  - core/modules/editor/css/editor.css
-#  - '@classy/css/components/tabs.css'
-#  - '@classy/css/components/form.css'
-#  - '@classy/css/components/details.css'
-
 regions:
   header_left: 'Header Left'
   header_right: 'Header Right'
   sidebar: 'Sidebar'
   navigation: 'Navigation'
   content: 'Content'
+  first: 'First'
+  second: 'Second'
+  third: 'Third'
   footer_left: 'Footer Left'
   footer_right: 'Footer Right'
   footer_bottom: 'Footer Bottom'

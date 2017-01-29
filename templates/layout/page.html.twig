@@ -41,6 +41,17 @@
       </div>
     {% endif %}
   </div>
+   <div class="columns">
+       {% if page.first %}
+           {{ page.first }}
+       {% endif %}
+       {% if page.second %}
+           {{ page.second }}
+       {% endif %}
+       {% if page.third %}
+           {{ page.third }}
+       {% endif %}
+   </div>
 </div>
 <footer class="page-footer">
   <div class="container">

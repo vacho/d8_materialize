@@ -31839,6 +31839,20 @@ footer.page-footer .menu--footer a {
     top: -2.2rem;
 }
 
+/* content-columns region*/
+.columns {
+    text-align: center;
+}
+
+.columns .region-first, .columns .region-second, .columns .region-third  {
+    display: inline-flex;
+    width: 30%;
+    margin: 10px 10px;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+
 
 /***************************
     CACSA CUSTOMIZATIONS
@@ -31847,6 +31861,10 @@ footer.page-footer .menu--footer a {
 
     html {
         font-size: 14px;
+    }
+
+    h2 {
+        font-size: 2em;
     }
 
     .top-nav .container{
@@ -31988,7 +32006,6 @@ footer.page-footer .menu--footer a {
     }
 
     #block-views-block-slider-block div.active img{
-        /*-webkit-filter: saturate(1000%) brightness(500%);*/
         -webkit-filter: saturate(1000%) brightness(500%);
     }
 
