@@ -28,7 +28,12 @@
 <div{{ attributes }}>
   {{ title_prefix }}
   {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
+    <div class="block-title">
+      <div class="title-icon"></div>
+      <div class="title-label">
+        <h2{{ title_attributes }}>{{ label }}</h2>
+      </div>
+    </div>
   {% endif %}
   {{ title_suffix }}
   {% block content %}
