@@ -31839,12 +31839,12 @@ footer.page-footer .menu--footer a {
     top: -2.2rem;
 }
 
-/* content-columns region*/
+/* Columns region*/
 .columns {
     text-align: center;
 }
 
-.columns .region-first, .columns .region-second, .columns .region-third  {
+.columns .first-column, .columns .second-column, .columns .third-column  {
     display: inline-flex;
     width: 30%;
     margin: 10px 10px;
@@ -31852,6 +31852,9 @@ footer.page-footer .menu--footer a {
     text-align: justify;
 }
 
+.columns .region-first, .columns .region-second, .columns .region-third {
+    width: 100%;
+}
 
 
 /***************************
@@ -31974,7 +31977,6 @@ a:hover {
         background-color: darkgreen;
         opacity: 0.6;
         top: -450px;
-        /*left: -87px;*/
         width: 300px;
     }
     #block-views-block-slider-block .views-field-title a {
@@ -32019,13 +32021,14 @@ a:hover {
     }
 
 }
+
 /***********************
 Pages content
 ************************/
-
 #block-d8-materialize-page-title {
     text-align: right;
-    padding: 0 40px;
+    padding: 0 40px 0px 190px;
+    margin: 0px 0px 40px 0px;
 }
 
 #block-d8-materialize-page-title h1 {
@@ -32094,10 +32097,9 @@ List
 /***********************
 NEWS
 ************************/
-
 #block-views-block-noticias-block {
     width: 100%;
-    height: 100%;
+    max-height: 400px;
     border-top-style: solid;
     border-top-width: 8px;
     border-top-color: #AED581;
@@ -32106,6 +32108,7 @@ NEWS
 
 #block-views-block-noticias-block .block-title {
     width: 100%;
+    min-height:105px;
     display: table;
     vertical-align: middle;
     height: 58px;
@@ -32141,3 +32144,257 @@ NEWS
 }
 
 
+/***********************
+MAIN BRANCH
+************************/
+#block-views-block-agencia-principal-block {
+    width: 100%;
+    max-height: 400px;
+    border-top-style: solid;
+    border-top-width: 8px;
+    border-top-color: #388E3C;
+    padding: 15px 0;
+}
+#block-views-block-agencia-principal-block .block-title {
+    width: 100%;
+    min-height:105px;
+    display: table;
+    vertical-align: middle;
+    height: 58px;
+}
+
+#block-views-block-agencia-principal-block .title-icon {
+    display: table-cell;
+    margin: 0 50px;
+    background-image: url("/sites/default/files/2017-01/agencias.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 58px;
+}
+
+#block-views-block-agencia-principal-block .title-label {
+    display: table-cell;
+    text-align: right;
+    padding: 0 20px 0 0;
+    width: 60%;
+}
+
+#block-views-block-agencia-principal-block .views-field .field-content {
+    padding: 1em 0;
+}
+
+#block-views-block-agencia-principal-block .views-field-field-direccion {
+    background-image: url("/sites/default/files/2017-01/ubicacion.png");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#block-views-block-agencia-principal-block .views-field-field-horarios-lunes-a-viernes {
+    background-image: url("/sites/default/files/2017-01/atencion.png");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+#block-views-block-agencia-principal-block .views-field-field-horarios-lunes-a-viernes .field-content {
+    padding: 0.1em 0;
+    display:inline-flex;
+}
+#block-views-block-agencia-principal-block .views-field-field-horarios-sabado .field-content {
+    padding: 0.1em 0;
+    display:inline-flex;
+}
+
+#block-views-block-agencia-principal-block .views-field-field-telefonos {
+    background-image: url("/sites/default/files/2017-01/telefono.png");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#block-views-block-agencia-principal-block .views-field-field-correo-electronico {
+    background-image: url("/sites/default/files/2017-01/correo-electronico.png");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#block-views-block-agencia-principal-block footer {
+    margin: 40px 0px;
+    padding: 10px 20px 10px 0;
+    text-align: right;
+}
+
+#block-views-block-agencia-principal-block footer a {
+    text-decoration: none;
+    background-color: #388E3C;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+}
+
+#block-views-block-agencia-principal-block footer a:hover {
+    text-decoration: none;
+    background-color: #AED581;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+}
+
+
+/***********************
+FINANCIAL LEARNING
+************************/
+#block-views-block-educacion-financiera-block {
+    width: 100%;
+    max-height: 400px;
+    border-top-style: solid;
+    border-top-width: 8px;
+    border-top-color: #DCE775;
+    padding: 15px 0;
+}
+
+#block-views-block-educacion-financiera-block .block-title {
+    width: 100%;
+    min-height:105px;
+    display: table;
+    vertical-align: middle;
+    height: 58px;
+}
+
+#block-views-block-educacion-financiera-block .title-icon {
+    display: table-cell;
+    margin: 0 50px;
+    background-image: url("/sites/default/files/2017-01/educacion-financiera.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 58px;
+}
+
+#block-views-block-educacion-financiera-block .title-label {
+    display: table-cell;
+    text-align: right;
+    padding: 0 20px 0 0;
+    width: 60%;
+}
+
+#block-views-block-educacion-financiera-block .views-field-title {
+    padding: 1em 0;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: darkgreen;
+}
+
+#block-views-block-educacion-financiera-block .views-field-title a {
+    color: rgba(0, 0, 0, 0.87);;
+    padding: 0 1em;
+}
+
+
+/***********************
+TARIFF
+************************/
+#block-views-block-tarifario-block {
+    width: 100%;
+    border-top-style: solid;
+    border-top-width: 8px;
+    border-top-color: #DCE775;
+    padding: 15px 0;
+    margin: 10px 0;
+}
+
+#block-views-block-tarifario-block .block-title {
+    width: 100%;
+    min-height:105px;
+    display: table;
+    vertical-align: middle;
+    height: 58px;
+}
+
+#block-views-block-tarifario-block .title-icon {
+    display: table-cell;
+    margin: 0 50px;
+    background-image: url("/sites/default/files/2017-01/tarifario.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 58px;
+}
+
+#block-views-block-tarifario-lock .title-label {
+    display: table-cell;
+    text-align: right;
+    padding: 0 20px 0 0;
+    width: 60%;
+}
+
+#block-views-block-tarifario-block .views-field-title {
+    padding: 1em 0;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: darkgreen;
+}
+
+#block-views-block-tarifario-block .views-field-title a {
+    color: rgba(0, 0, 0, 0.87);;
+    padding: 0 1em;
+}
+
+/***********************
+SOCIAL RESPONSABILITY
+************************/
+#block-views-block-responsabilidad-social-block {
+    width: 100%;
+    border-top-style: solid;
+    border-top-width: 8px;
+    border-top-color: #AED581;
+    padding: 15px 0;
+    margin: 10px 0;
+}
+
+#block-views-block-responsabilidad-social-block .block-title {
+    width: 100%;
+    min-height:105px;
+    display: table;
+    vertical-align: middle;
+    height: 58px;
+}
+
+#block-views-block-responsabilidad-social-block .title-icon {
+    display: table-cell;
+    margin: 0 50px;
+    background-image: url("/sites/default/files/2017-01/tarifario.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 58px;
+}
+
+#block-views-block-tarifario-lock .title-label {
+    display: table-cell;
+    text-align: right;
+    padding: 0 20px 0 0;
+    width: 60%;
+}
+
+#block-views-block-responsabilidad-social-block .views-field-title {
+    padding: 1em 0;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: darkgreen;
+}
+
+#block-views-block-responsabilidad-social-block .views-field-title a {
+    color: rgba(0, 0, 0, 0.87);;
+    padding: 0 1em;
+}
+
+/***********************
+CLAIM POINT
+************************/
+#block-puntodereclamo {
+    width: 100%;
+    border-top-style: solid;
+    border-top-width: 8px;
+    border-top-color: #388E3C;
+    padding: 15px 0;
+    margin: 10px 0;
+}
