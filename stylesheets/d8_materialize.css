@@ -32095,7 +32095,7 @@ List
 
 
 /***********************
-NEWS
+NEWS block
 ************************/
 #block-views-block-noticias-block {
     width: 100%;
@@ -32142,7 +32142,6 @@ NEWS
     color: rgba(0, 0, 0, 0.87);;
     padding: 0 1em;
 }
-
 
 /***********************
 MAIN BRANCH
@@ -32216,13 +32215,13 @@ MAIN BRANCH
     background-repeat: no-repeat;
 }
 
-#block-views-block-agencia-principal-block footer {
-    margin: 40px 0px;
+#block-views-block-agencia-principal-block .view-footer {
+    margin: 25px 0px;
     padding: 10px 20px 10px 0;
     text-align: right;
 }
 
-#block-views-block-agencia-principal-block footer a {
+#block-views-block-agencia-principal-block .view-footer a {
     text-decoration: none;
     background-color: #388E3C;
     color: white;
@@ -32230,7 +32229,7 @@ MAIN BRANCH
     margin: 5px 0;
 }
 
-#block-views-block-agencia-principal-block footer a:hover {
+#block-views-block-agencia-principal-block .view-footer a:hover {
     text-decoration: none;
     background-color: #AED581;
     color: white;
@@ -32388,7 +32387,7 @@ SOCIAL RESPONSABILITY
 }
 
 /***********************
-CLAIM POINT
+CLAIM POINT block
 ************************/
 #block-puntodereclamo {
     width: 100%;
@@ -32397,4 +32396,28 @@ CLAIM POINT
     border-top-color: #388E3C;
     padding: 15px 0;
     margin: 10px 0;
+}
+
+/***********************
+NEWS page,
+************************/
+.views-element-container {
+
+}
+
+.view-display-id-page_1 .views-field-title{
+    font-size: 2em;
+    border-bottom-style: solid;
+    border-bottom-color: #AED581;
+    margin: 10px 0 0 0;
+}
+
+.view-display-id-page_1 .views-field-title:hover{
+    border-bottom-color: #388E3C;
+}
+
+.view-display-id-page_1 .views-field-changed{
+    color:#717171;
+    text-align: right;
+    padding: 5px 0;
 }
