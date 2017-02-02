@@ -32028,11 +32028,11 @@ Pages content
 #block-d8-materialize-page-title {
     text-align: right;
     padding: 0 40px 0px 190px;
-    margin: 0px 0px 40px 0px;
+    margin: 0px 0px 50px 0px;
 }
 
 #block-d8-materialize-page-title h1 {
-    font-size: 4em;
+    font-size: 3em;
     color: #388E3C;
 }
 
