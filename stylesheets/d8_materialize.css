@@ -31870,6 +31870,11 @@ h2 {
     color: #388E3C;
 }
 
+h3 {
+    font-size: 1.5em;
+    color: #388E3C;
+}
+
 .top-nav .container{
     width: 98%;
 }
@@ -31907,8 +31912,9 @@ a:hover {
 
     #block-d8-materialize-main-menu {
         position: relative;
-        left: 170px;
+        left: 180px;
         width: 700px;
+        z-index: 10;
     }
 
     #nav-mobile a:hover {
@@ -31940,6 +31946,30 @@ a:hover {
     .region-header-right #block-views-block-redes-sociales li a {
         display: flex;
         padding: 10px;
+    }
+
+    /**********************************
+    Drupdown Submenu
+    *******************************/
+    #block-d8-materialize-main-menu ul ul {
+        display:none;
+    }
+
+    #block-d8-materialize-main-menu ul ul li {
+        background-color: yellow;
+        color: #AED581;
+    }
+
+    #block-d8-materialize-main-menu ul ul li a.is-active{
+        background-color: yellow;
+        color: #388E3C;
+        border-bottom-color: #388E3C;
+    }
+
+    #block-d8-materialize-main-menu ul ul li a:hover{
+        background-color: yellow;
+        color: #388E3C;
+        border-bottom-color: #388E3C;
     }
 
     /***********************
@@ -32333,9 +32363,28 @@ TARIFF
 }
 
 #block-views-block-tarifario-block .views-field-title a {
-    color: rgba(0, 0, 0, 0.87);;
+    color: rgba(0, 0, 0, 0.87);
     padding: 0 1em;
 }
+
+.table-cacsa {
+    width: 50%;
+    align-content: center;
+}
+
+.table-credito-cacsa {
+    width: 80%;
+    align-content: center;
+}
+
+.table-cacsa th, .table-cacsa td  {
+    padding: 5px;
+}
+
+.table-credito-cacsa th, .table-credito-cacsa td  {
+    padding: 5px;
+}
+
 
 /***********************
 SOCIAL RESPONSABILITY
@@ -32401,8 +32450,8 @@ CLAIM POINT block
 /***********************
 NEWS page,
 ************************/
-.views-element-container {
-
+.view-display-id-page_1 .views-row{
+    margin: 0 0 20px 0;
 }
 
 .view-display-id-page_1 .views-field-title{
