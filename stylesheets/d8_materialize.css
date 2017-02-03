@@ -32421,3 +32421,40 @@ NEWS page,
     text-align: right;
     padding: 5px 0;
 }
+
+.view-display-id-page_1 .views-field-field-archivo{
+    height: 58px !important;
+    text-align: right;
+}
+
+
+.view-display-id-page_1 .views-field-field-archivo a {
+    color: #388E3C;
+}
+
+.view-display-id-page_1 .views-field-field-archivo a:hover {
+    color: #AED581;
+}
+
+.view-display-id-page_1 a[href$=".pdf"] {
+    background-image: url("/sites/default/files/2017-01/pdf.png");
+    background-position: center left;
+    background-repeat: no-repeat;
+    padding-left: 58px;
+    height: 58px;
+    display: inline-block;
+    padding-top: 10px;
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
+}
+
+.view-display-id-page_1 a[href$=".pdf"]:hover{
+    background-image: url("/sites/default/files/2017-01/pdf_alt.png");
+    background-position: center left;
+    background-repeat: no-repeat;
+    padding-left: 58px;
+    height: 58px;
+    display: inline-block;
+    padding-top: 10px;
+}
