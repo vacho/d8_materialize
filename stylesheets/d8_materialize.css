@@ -31856,7 +31856,6 @@ footer.page-footer .menu--footer a {
     width: 100%;
 }
 
-
 /***************************
     CACSA CUSTOMIZATIONS
 ****************************/
@@ -32089,6 +32088,31 @@ Read more link
 }
 
 .views-element-container .more-link a:hover {
+    text-decoration: none;
+    background-color: #AED581;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+}
+
+/***********************
+map link
+************************/
+.views-element-container .simple-gmap-link {
+    /*margin: 20px 0px;
+    padding: 10px 20px 10px 0;*/
+    text-align: right;
+}
+
+.views-element-container .simple-gmap-link a {
+    text-decoration: none;
+    background-color: #388E3C;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+}
+
+.views-element-container .simple-gmap-link a:hover {
     text-decoration: none;
     background-color: #AED581;
     color: white;
@@ -32393,11 +32417,27 @@ TARIFF
     padding:0px;
 }
 
+
+.table-dpf {
+    width: 80%;
+}
+
+.table-dpf .ventajas td{
+    width: 50%;
+}
+.table-dpf .socio td{
+    width: 33%;
+}
+
+.table-dpf th, .table-dpf td  {
+    padding: 5px;
+}
+
 /*****************************
 BRANCHES
 **************************/
 .view-agencias .views-col {
-    padding: 10px;
+    padding: 5px 80px;
     /*margin: 10px;*/
 }
 
@@ -32538,4 +32578,17 @@ NEWS page,
     height: 58px;
     display: inline-block;
     padding-top: 10px;
+}
+
+
+/* form */
+.webform-submission-form {
+    text-align: left !important;
+}
+
+.webform-submission-form select {
+    display: inherit;
+}
+
+.webform-submission-form label {
 }
