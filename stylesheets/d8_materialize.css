@@ -32385,10 +32385,42 @@ TARIFF
     padding: 5px;
 }
 
+.table-servicios {
+    width: 60%;
+}
 
-/***********************
-SOCIAL RESPONSABILITY
-************************/
+.table-servicios th, .table-servicios td  {
+    padding:0px;
+}
+
+/*****************************
+BRANCHES
+**************************/
+.view-agencias .views-col {
+    padding: 10px;
+    /*margin: 10px;*/
+}
+
+.view-agencias  .views-field-field-foto-mimiatura {
+    position:relative;
+    float:left;
+    margin: 0 10px 0 0;
+}
+
+.view-agencias .views-field-title{
+    border-bottom-style: none !important;
+    font-size: 1.5em !important;
+    color: #388E3C;
+}
+
+.view-agencias .field-content {
+    display: inline;
+}
+
+
+    /***********************
+    SOCIAL RESPONSABILITY
+    ************************/
 #block-views-block-responsabilidad-social-block {
     width: 100%;
     border-top-style: solid;
@@ -32409,7 +32441,7 @@ SOCIAL RESPONSABILITY
 #block-views-block-responsabilidad-social-block .title-icon {
     display: table-cell;
     margin: 0 50px;
-    background-image: url("/sites/default/files/2017-01/tarifario.png");
+    background-image: url("/sites/default/files/2017-01/responsabilidad-social.png");
     background-position: center;
     background-repeat: no-repeat;
     width: 40%;
