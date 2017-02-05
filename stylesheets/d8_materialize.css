@@ -31885,6 +31885,12 @@ a:hover {
     color: #388E3C;
 }
 
+article ul li::before {
+    content: "• ";
+    font-size: 1em;
+    color:#388E3C;
+}
+
 @media only screen and (min-width: 1200px) {
 
     /***********************
@@ -32417,20 +32423,35 @@ TARIFF
     padding:0px;
 }
 
+/************************
+DPF
+*********************/
 
 .table-dpf {
     width: 80%;
 }
 
-.table-dpf .ventajas td{
+.ventajas td{
     width: 50%;
 }
-.table-dpf .socio td{
+
+.socio td{
     width: 33%;
 }
 
 .table-dpf th, .table-dpf td  {
-    padding: 5px;
+    padding: 5px 35px;
+}
+
+#block-bannercajadeahorro img {
+    width:100%;
+}
+
+/*******************************
+Ahorro
+*******************************/
+#block-bannerdpf img {
+    width:100%;
 }
 
 /*****************************
@@ -32591,4 +32612,41 @@ NEWS page,
 }
 
 .webform-submission-form label {
+    font-size: 1em;
+    color:#388E3C;
 }
+
+.webform-submission-form .form-item {
+    margin: 2em 0;
+}
+
+.webform-submission-form .form-item input {
+    margin: 0;
+    max-height: 1.5em;
+    border-bottom-color: #C6C6C6;;
+}
+
+.webform-submission-form .form-item input:focus {
+    border-bottom-width: medium;
+    border-bottom-color: #388E3C;
+    box-shadow: none;
+}
+
+.webform-submission-form .form-item textarea:focus {
+    border-color: #388E3C;
+    box-shadow: none;
+}
+
+.webform-submission-form .description {
+    color:#717171;
+}
+
+.webform-submission-form select {
+    color:#717171;
+    border-color: #C6C6C6;
+}
+
+#edit-submit:hover {
+    background-color: #AED581;
+}
+

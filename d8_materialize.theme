@@ -51,3 +51,8 @@ function d8_materialize_theme_suggestions_page_alter(array &$suggestions, array 
   }
   return $suggestions;
 }
+
+function d8_materialize_theme_preprocess_input(&$variables) {
+  dd($variables);
+  print_r("Hola benbe");
+}
