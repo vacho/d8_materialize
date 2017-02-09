@@ -19,6 +19,24 @@ jQuery(document).ready(function() {
         jQuery('#block-d8-materialize-page-title').remove();
     }
 
+    if(window.location.pathname == '/formulario/creditos') {
+        jQuery('.top-nav').remove();
+        jQuery('footer').remove();
+        jQuery('#block-d8-materialize-page-title').remove();
+    }
+
+    if(window.location.pathname == '/formulario/dpfs') {
+        jQuery('.top-nav').remove();
+        jQuery('footer').remove();
+        jQuery('#block-d8-materialize-page-title').remove();
+    }
+
+    if(window.location.pathname == '/formulario/caja-de-ahorros') {
+        jQuery('.top-nav').remove();
+        jQuery('footer').remove();
+        jQuery('#block-d8-materialize-page-title').remove();
+    }
+
     // pdf link to taget _blank
     jQuery('.file--application-pdf a').attr("target","_blank");
 
