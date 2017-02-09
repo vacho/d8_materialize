@@ -32128,7 +32128,7 @@ map link
 
 
 /***********************
-List
+LISTAS
 ************************/
 .views-element-container article h2 {
     font-size: 2em;
@@ -32155,7 +32155,7 @@ List
 
 
 /***********************
-NEWS block
+NOTICIAS block
 ************************/
 #block-views-block-noticias-block {
     width: 100%;
@@ -32203,8 +32203,20 @@ NEWS block
     padding: 0 1em;
 }
 
+#block-views-block-noticias-block .view-noticias .view-content  {
+    min-height: 200px;
+}
+
+#block-views-block-agencia-principal-block .view-content {
+    min-height: 195px;
+}
+
+#block-views-block-educacion-financiera-block .view-content {
+    min-height: 200px;
+}
+
 /***********************
-MAIN BRANCH
+AGENCIA PRINCIPAL
 ************************/
 #block-views-block-agencia-principal-block {
     width: 100%;
@@ -32297,9 +32309,8 @@ MAIN BRANCH
     margin: 5px 0;
 }
 
-
 /***********************
-FINANCIAL LEARNING
+EDUCACIÓN FINANCIERA
 ************************/
 #block-views-block-educacion-financiera-block {
     width: 100%;
@@ -32339,7 +32350,7 @@ FINANCIAL LEARNING
     padding: 1em 0;
     border-bottom-style: solid;
     border-bottom-width: thin;
-    border-bottom-color: darkgreen;
+    border-bottom-color: #388E3C;
 }
 
 #block-views-block-educacion-financiera-block .views-field-title a {
@@ -32347,9 +32358,17 @@ FINANCIAL LEARNING
     padding: 0 1em;
 }
 
+#edit-submit-educacion-financiera {
+    margin: 10px 0;
+}
+
+.view-educacion-financiera  .views-field-title {
+    color: #AED581;
+}
+
 
 /***********************
-TARIFF
+TARIFARIO
 ************************/
 #block-views-block-tarifario-block {
     width: 100%;
@@ -32448,14 +32467,14 @@ DPF
 }
 
 /*******************************
-Ahorro
+AHORRO
 *******************************/
 #block-bannerdpf img {
     width:100%;
 }
 
 /*****************************
-BRANCHES
+SUCURSALES
 **************************/
 .view-agencias .views-col {
     padding: 5px 80px;
@@ -32478,9 +32497,13 @@ BRANCHES
     display: inline;
 }
 
+.view-agencias .views-field-title {
+    text-align: left;
+}
+
 
     /***********************
-    SOCIAL RESPONSABILITY
+    RESPONSABILIDAD SOCIAL
     ************************/
 #block-views-block-responsabilidad-social-block {
     width: 100%;
@@ -32529,7 +32552,7 @@ BRANCHES
 }
 
 /***********************
-CLAIM POINT block
+PUNTO DE RECLAMO block
 ************************/
 #block-puntodereclamo {
     width: 100%;
@@ -32601,8 +32624,72 @@ NEWS page,
     padding-top: 10px;
 }
 
+/*****************************
+CREDITOS
+*****************************/
+#block-views-block-creditos-block {
+    position: relative;
+    top: -64px;
+    z-index: -10;
+}
 
-/* form */
+.view-creditos .views-field-title{
+    position:relative;
+    top: 530px;
+    left: 310px;
+    padding: 20px 50px;
+    background-color: #388E3C;
+    color: white;
+    max-width: 200px;
+    text-align: center;
+    z-index: 10;
+    border-radius: 10px 0 0 10px;
+}
+
+.view-creditos .views-field-field-imagen {
+    position:relative;
+    float: left;
+    width: 505px;
+}
+
+.view-creditos .views-field-body {
+    position:relative;
+    float: right;
+    width: 60%;
+    padding: 0 20px 0 10px;
+}
+
+.view-creditos .views-slideshow-controls-bottom{
+    background-color: #388E3C;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    top: -14px;
+}
+
+.view-creditos .views-slideshow-controls-bottom a{
+    color: white;
+}
+
+.view-creditos .views_slideshow_controls_text_pause{
+    padding: 0 20px;
+}
+
+/* Formulario */
+
+select {
+    display: inherit;
+}
+
+.form-item label {
+    font-size: 1em;
+    color:#388E3C;
+}
+
+.form-item {
+    text-align: left;
+}
+
 .webform-submission-form {
     text-align: left !important;
 }
