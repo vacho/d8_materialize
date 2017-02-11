@@ -19,5 +19,7 @@ d8_materialize_custom:
     js/d8_materialize/custom.js: { scope: Footer }
   dependencies:
     - core/jquery
+    - core/jquery.ui
+    - core/jquery.ui.dialog
     - core/jquery.once
     - core/drupal

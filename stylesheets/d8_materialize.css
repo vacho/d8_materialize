@@ -32462,14 +32462,11 @@ DPF
     padding: 5px 35px;
 }
 
-#block-bannercajadeahorro img {
-    width:100%;
-}
 
 /*******************************
 AHORRO
 *******************************/
-#block-bannerdpf img {
+#block-bannercajadeahorro img {
     width:100%;
 }
 
@@ -32965,4 +32962,21 @@ select {
         min-height: 10em;
     }
 
+}
+
+
+/**************************
+JQUERY DIALOG
+****************/
+/*.ui-dialog-titlebar {
+    background-color: yellow !important;
+}*/
+.ui-dialog {
+    border:1px solid #388E3C !important;
+}
+
+.ui-dialog-titlebar{
+    background-color:#388E3C !important;
+    background-image: none !important;
+    color:white;
 }
