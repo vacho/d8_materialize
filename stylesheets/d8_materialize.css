@@ -32627,7 +32627,12 @@ CREDITOS
 #block-views-block-creditos-block {
     position: relative;
     top: -64px;
-    z-index: -10;
+    /*z-index: -10;*/
+}
+
+#block-creditos {
+    position: relative;
+    top: -84px;
 }
 
 .view-creditos .views-field-title{
@@ -32652,8 +32657,8 @@ CREDITOS
 .view-creditos .views-field-body {
     position:relative;
     float: right;
-    width: 57%;
-    padding: 0 20px 0 10px;
+    max-width: 690px;
+    padding: 0 20px 0 20px;
 }
 
 .view-creditos .views-slideshow-controls-bottom{
@@ -32661,7 +32666,7 @@ CREDITOS
     text-align: center;
     padding: 10px 0;
     position: relative;
-    top: -14px;
+    top: -0.4em;
 }
 
 .view-creditos .views-slideshow-controls-bottom a{
@@ -32686,10 +32691,14 @@ CREDITOS
     margin: 20px 0 10px 0;
 }
 
+/***************************************
+FORMULARIO DE CREDITOS, DPF, AHORROS
+*****************************************/
+
 .webform-submission-creditos-form .form-item-nombre-completo,
 .webform-submission-creditos-form .form-item-telefono,
 .webform-submission-creditos-form .form-item-email{
-    width: 31%;
+    width: 32%;
     position: relative;
     float: left;
     margin: 0 5px !important;
@@ -32708,7 +32717,7 @@ CREDITOS
 .webform-submission-dpf-form .form-item-nombre-completo,
 .webform-submission-dpf-form .form-item-telefono,
 .webform-submission-dpf-form .form-item-email{
-    width: 31%;
+    width: 32%;
     position: relative;
     float: left;
     margin: 0 5px !important;
@@ -32726,7 +32735,7 @@ CREDITOS
 .webform-submission-caja-de-ahorros-form .form-item-nombre-completo,
 .webform-submission-caja-de-ahorros-form .form-item-telefono,
 .webform-submission-caja-de-ahorros-form .form-item-email{
-    width: 31%;
+    width: 32%;
     position: relative;
     float: left;
     margin: 0 5px !important;
@@ -32742,7 +32751,7 @@ CREDITOS
 }
 
 
-/* Formulario */
+/* FORMULARIOS */
 
 select {
     display: inherit;
