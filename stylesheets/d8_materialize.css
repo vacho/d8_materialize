@@ -32080,7 +32080,7 @@ Pages content
 Read more link
 ************************/
 .views-element-container .more-link {
-    margin: 20px 0px;
+    margin: 0px 0px;
     padding: 10px 20px 10px 0;
     text-align: right;
 }
@@ -32174,6 +32174,11 @@ NOTICIAS block
     height: 58px;
 }
 
+#block-views-block-noticias-block .views-field-title .field-content {
+    width: 100%;
+    padding: 5px;
+}
+
 #block-views-block-noticias-block .title-icon {
     display: table-cell;
     margin: 0 50px;
@@ -32200,19 +32205,22 @@ NOTICIAS block
 
 #block-views-block-noticias-block .views-field-title a{
     color: rgba(0, 0, 0, 0.87);;
-    padding: 0 1em;
+    padding: 0 0.3em;
 }
 
 #block-views-block-noticias-block .view-noticias .view-content  {
-    min-height: 200px;
+    min-height: 240px;
+    text-align: left;
 }
 
 #block-views-block-agencia-principal-block .view-content {
-    min-height: 195px;
+    min-height: 240px;
+    text-align: left;
 }
 
 #block-views-block-educacion-financiera-block .view-content {
-    min-height: 200px;
+    min-height: 240px;
+    text-align: left;
 }
 
 /***********************
@@ -32288,7 +32296,7 @@ AGENCIA PRINCIPAL
 }
 
 #block-views-block-agencia-principal-block .view-footer {
-    margin: 25px 0px;
+    margin: 0px 0px;
     padding: 10px 20px 10px 0;
     text-align: right;
 }
@@ -32376,7 +32384,8 @@ TARIFARIO
     border-top-width: 8px;
     border-top-color: #DCE775;
     padding: 15px 0;
-    margin: 10px 0;
+    margin: 20px 0;
+    max-height: 400px;
 }
 
 #block-views-block-tarifario-block .block-title {
@@ -32384,7 +32393,6 @@ TARIFARIO
     min-height:105px;
     display: table;
     vertical-align: middle;
-    height: 58px;
 }
 
 #block-views-block-tarifario-block .title-icon {
@@ -32499,16 +32507,19 @@ SUCURSALES
 }
 
 
-    /***********************
-    RESPONSABILIDAD SOCIAL
-    ************************/
+/***********************
+RESPONSABILIDAD SOCIAL
+************************/
+
 #block-views-block-responsabilidad-social-block {
     width: 100%;
     border-top-style: solid;
     border-top-width: 8px;
     border-top-color: #AED581;
     padding: 15px 0;
-    margin: 10px 0;
+    margin: 20px 0;
+    max-height: 400px;
+
 }
 
 #block-views-block-responsabilidad-social-block .block-title {
@@ -32516,7 +32527,6 @@ SUCURSALES
     min-height:105px;
     display: table;
     vertical-align: middle;
-    height: 58px;
 }
 
 #block-views-block-responsabilidad-social-block .title-icon {
@@ -32548,6 +32558,10 @@ SUCURSALES
     padding: 0 1em;
 }
 
+#block-views-block-responsabilidad-social-block .view-content{
+    min-height: 170px;
+}
+
 /***********************
 PUNTO DE RECLAMO block
 ************************/
@@ -32557,7 +32571,7 @@ PUNTO DE RECLAMO block
     border-top-width: 8px;
     border-top-color: #388E3C;
     padding: 15px 0;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 /***********************
