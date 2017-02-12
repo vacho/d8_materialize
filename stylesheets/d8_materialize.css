@@ -31844,14 +31844,6 @@ footer.page-footer .menu--footer a {
     text-align: center;
 }
 
-.columns .first-column, .columns .second-column, .columns .third-column  {
-    display: inline-flex;
-    width: 30%;
-    margin: 10px 10px;
-    padding: 0 10px;
-    text-align: justify;
-}
-
 .columns .region-first, .columns .region-second, .columns .region-third {
     width: 100%;
 }
@@ -32055,6 +32047,16 @@ article ul li::before {
         -webkit-filter: saturate(1000%) brightness(500%);
     }
 
+    /*****************
+    3 columnas home
+    **************/
+    .columns .first-column, .columns .second-column, .columns .third-column  {
+        display: inline-flex;
+        width: 30%;
+        margin: 10px 10px;
+        padding: 0 10px;
+        text-align: justify;
+    }
 }
 
 /***********************
@@ -32393,6 +32395,7 @@ TARIFARIO
     min-height:105px;
     display: table;
     vertical-align: middle;
+    text-align: right;
 }
 
 #block-views-block-tarifario-block .title-icon {
@@ -32641,7 +32644,6 @@ CREDITOS
 #block-views-block-creditos-block {
     position: relative;
     top: -64px;
-    /*z-index: -10;*/
 }
 
 #block-creditos {
@@ -32828,13 +32830,46 @@ select {
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .row .col.s12 {
+        padding:0;
+    }
+
+    .container .row {
+        margin: 0 -1.3em;
+    }
+
+    /***************
+    HEADER
+    *****************/
     .branding-block {
         display: none;
+    }
+
+    #block-d8-materialize-main-menu {
+        padding: 0 15px;
     }
 
     #block-views-block-redes-sociales {
         display:none;
     }
+
+    /****************
+    FOOTER
+    ************/
+    .footer-copyright {
+        min-height: 70px;
+    }
+    .region-footer-bottom {
+        padding: 5px;
+    }
+    /*#block-derechos, #block-derechos div h6 {
+        min-height: 150px;
+    }*/
+
+
+    /******************
+    SLIDER HOME
+    *****************/
 
     .views_slideshow_cycle_teaser_section {
         width: 100% !important;
@@ -32854,36 +32889,49 @@ select {
 
     .views_slideshow_cycle_teaser_section .views-field-title {
         position:relative;
-        top: -55px;
-        min-height: 1.5em;
+        top: -27px;
+        min-height: 2em;
         background-color: #388E3C;
+        padding: 0.2em;
+        text-align: center;
+    }
+
+    .views_slideshow_cycle_teaser_section {
+        height: 270px;
     }
 
     .views_slideshow_cycle_teaser_section .views-field-body {
         background-color: #AED581;
         position: relative;
-        top: -70px;
-        min-height: 10em;
+        top: -30px;
+        min-height: 60px !important;
+        padding: 2px !important;
+        text-align: center;
     }
 
-    #block-views-block-agencia-principal-block, #block-views-block-responsabilidad-social-block,
-    #block-views-block-tarifario-block, #block-views-block-educacion-financiera-block,
+    /***********************
+    BLOQUES HOME: noticas, agencia principal, educación financiera, tarifarios, responsabilidad social, punto de reclamo
+    ***********************/
+
+    #block-views-block-noticias-block,
+    #block-views-block-agencia-principal-block,
+    #block-views-block-responsabilidad-social-block,
+    #block-views-block-tarifario-block,
+    #block-views-block-educacion-financiera-block,
     #block-puntodereclamo{
-        display: none;
-    }
-
-    #block-views-block-noticias-block {
-        max-height:inherit;
-        min-width: 220px;
+        padding: 0 10px;
         text-align: left;
     }
 
+    .region-first {
+        width: 100%;
+    }
+
     table {
-        border: 1px solid #ccc;
         border-collapse: collapse;
         margin: 0;
         padding: 0;
-        width: 250px !important;
+        min-width: 250px !important;
         table-layout: fixed;
     }
     table caption {
@@ -32891,15 +32939,13 @@ select {
         margin: .5em 0 .75em;
     }
     table tr {
-        background: #f8f8f8;
-        border: 1px solid #ddd;
         padding: 0 !important;
     }
     table th,
     table td {
         padding: 0 !important;
         text-align: center;
-        width: 240px !important;
+        min-width: 240px !important;
     }
     table th {
         font-size: .85em;
@@ -32924,12 +32970,10 @@ select {
             width: 1px;
         }
         table tr {
-            border-bottom: 3px solid #ddd;
             display: block;
             margin-bottom: .625em;
         }
         table td {
-            border-bottom: 1px solid #ddd;
             display: block;
             font-size: .8em;
             text-align: right;
@@ -32948,6 +32992,20 @@ select {
             border-bottom: 0;
         }
 
+    /********************
+    h1, h2, ...  hn
+    **********************/
+    h1 {
+        font-size: 1.7em !important;
+    }
+
+    h2 {
+        font-size: 1.5em !important;
+    }
+
+    h6 {
+        font-size: 0.9em;
+    }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
