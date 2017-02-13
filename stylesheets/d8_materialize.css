@@ -32057,6 +32057,49 @@ article ul li::before {
         padding: 0 10px;
         text-align: justify;
     }
+
+    /***************************************
+    FORMULARIO DE CREDITOS, DPF, AHORROS
+    *****************************************/
+
+    .webform-submission-creditos-form .form-item-nombre-completo,
+    .webform-submission-creditos-form .form-item-telefono,
+    .webform-submission-creditos-form .form-item-email{
+        width: 32%;
+        position: relative;
+        float: left;
+        margin: 0 5px !important;
+    }
+
+    .webform-submission-dpf-form .form-item-nombre-completo,
+    .webform-submission-dpf-form .form-item-telefono,
+    .webform-submission-dpf-form .form-item-email{
+        width: 32%;
+        position: relative;
+        float: left;
+        margin: 0 5px !important;
+    }
+
+    .webform-submission-caja-de-ahorros-form .form-item-nombre-completo,
+    .webform-submission-caja-de-ahorros-form .form-item-telefono,
+    .webform-submission-caja-de-ahorros-form .form-item-email{
+        width: 32%;
+        position: relative;
+        float: left;
+        margin: 0 5px !important;
+    }
+
+    #block-formulariocreditos, #block-formulariocreditos div {
+        height: 250px;
+    }
+
+    #block-formulariocajadeahorros, #block-formulariocajadeahorros div {
+        height: 250px;
+    }
+
+    #block-formulariodpfs, #block-formulariodpfs div {
+        height: 250px;
+    }
 }
 
 /***********************
@@ -32711,15 +32754,6 @@ CREDITOS
 FORMULARIO DE CREDITOS, DPF, AHORROS
 *****************************************/
 
-.webform-submission-creditos-form .form-item-nombre-completo,
-.webform-submission-creditos-form .form-item-telefono,
-.webform-submission-creditos-form .form-item-email{
-    width: 32%;
-    position: relative;
-    float: left;
-    margin: 0 5px !important;
-}
-
 .webform-submission-creditos-form .form-item-mensaje {
     margin: 0 !important;
 }
@@ -32729,16 +32763,6 @@ FORMULARIO DE CREDITOS, DPF, AHORROS
     text-align: center;
 }
 
-
-.webform-submission-dpf-form .form-item-nombre-completo,
-.webform-submission-dpf-form .form-item-telefono,
-.webform-submission-dpf-form .form-item-email{
-    width: 32%;
-    position: relative;
-    float: left;
-    margin: 0 5px !important;
-}
-
 .webform-submission-dpf-form .form-item-mensaje {
     margin: 0 !important;
 }
@@ -32746,15 +32770,6 @@ FORMULARIO DE CREDITOS, DPF, AHORROS
 .webform-submission-dpf-form .webform-confirmation {
     margin: 20px 0;
     text-align: center;
-}
-
-.webform-submission-caja-de-ahorros-form .form-item-nombre-completo,
-.webform-submission-caja-de-ahorros-form .form-item-telefono,
-.webform-submission-caja-de-ahorros-form .form-item-email{
-    width: 32%;
-    position: relative;
-    float: left;
-    margin: 0 5px !important;
 }
 
 .webform-submission-caja-de-ahorros-form .form-item-mensaje {
@@ -32834,8 +32849,16 @@ select {
         padding:0;
     }
 
+    .container {
+        width: 100%;
+    }
+
     .container .row {
-        margin: 0 -1.3em;
+        margin: 0 0em;
+    }
+
+    .row .l-content-full{
+        margin: 0 0em;
     }
 
     /***************
@@ -32862,32 +32885,28 @@ select {
     .region-footer-bottom {
         padding: 5px;
     }
-    /*#block-derechos, #block-derechos div h6 {
-        min-height: 150px;
-    }*/
-
 
     /******************
     SLIDER HOME
     *****************/
 
-    .views_slideshow_cycle_teaser_section {
+    .view-slider .views_slideshow_cycle_teaser_section {
         width: 100% !important;
         height: 200px;
     }
-    .views_slideshow_cycle_slide {
+    .view-slider .views_slideshow_cycle_slide {
         width: 100% !important;
     }
-    .views-field-field-imagen img {
+    .view-slider .views-field-field-imagen img {
         width: 100% !important;
         height: 200px;
     }
 
-    .views-slideshow-controls-bottom .views-field-field-icono img {
+    .view-slider .views-slideshow-controls-bottom .views-field-field-icono img {
         display: none;
     }
 
-    .views_slideshow_cycle_teaser_section .views-field-title {
+    .view-slider .views_slideshow_cycle_teaser_section .views-field-title {
         position:relative;
         top: -27px;
         min-height: 2em;
@@ -32896,11 +32915,11 @@ select {
         text-align: center;
     }
 
-    .views_slideshow_cycle_teaser_section {
+    .view-slider .views_slideshow_cycle_teaser_section {
         height: 270px;
     }
 
-    .views_slideshow_cycle_teaser_section .views-field-body {
+    .view-slider .views_slideshow_cycle_teaser_section .views-field-body {
         background-color: #AED581;
         position: relative;
         top: -30px;
@@ -32910,7 +32929,10 @@ select {
     }
 
     /***********************
-    BLOQUES HOME: noticas, agencia principal, educación financiera, tarifarios, responsabilidad social, punto de reclamo
+    BLOQUES HOME:
+    noticas, agencia principal,
+    educación financiera, tarifarios,
+    responsabilidad social, punto de reclamo
     ***********************/
 
     #block-views-block-noticias-block,
@@ -32926,6 +32948,21 @@ select {
     .region-first {
         width: 100%;
     }
+
+    #block-views-block-noticias-block {
+        max-height: 500px;
+    }
+
+    #block-views-block-noticias-block .view-content {
+    }
+
+    #block-views-block-noticias-block .more-link {
+        margin: 20px 0 0 0 !important;
+    }
+
+    /******************
+    TABLAS
+    *******************/
 
     table {
         border-collapse: collapse;
@@ -32955,42 +32992,42 @@ select {
 
     table {
             border: 0;
-        }
-        table caption {
-            font-size: 1.3em;
-        }
-        table thead {
-            border: none;
-            clip: rect(0 0 0 0);
-            height: 1px;
-            margin: -1px;
-            overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-        }
-        table tr {
-            display: block;
-            margin-bottom: .625em;
-        }
-        table td {
-            display: block;
-            font-size: .8em;
-            text-align: right;
-        }
-        table td:before {
-            /*
-            * aria-label has no advantage, it won't be read inside a table
-            content: attr(aria-label);
-            */
-            content: attr(data-label);
-            float: left;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-        table td:last-child {
-            border-bottom: 0;
-        }
+    }
+    table caption {
+        font-size: 1.3em;
+    }
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    table tr {
+        display: block;
+        margin-bottom: .625em;
+    }
+    table td {
+        display: block;
+        font-size: .8em;
+        text-align: left;
+    }
+    table td:before {
+        /*!*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        *!*/
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    table td:last-child {
+        border-bottom: 0;
+    }
 
     /********************
     h1, h2, ...  hn
@@ -33003,9 +33040,189 @@ select {
         font-size: 1.5em !important;
     }
 
+    h3 {
+        font-size: 1.5em !important;
+        margin: 0.5em 0;
+    }
+
     h6 {
         font-size: 0.9em;
     }
+
+    ul li {
+        font-size: 1.25em;
+        padding: 0 0 0 1em;
+    }
+
+    /********************
+    CREDITOS
+    ********************/
+    #block-views-block-creditos-block {
+        top:0;
+        width:100%;
+    }
+    .view-creditos .views-field-title{
+        position:relative;
+        width: 100%;
+        max-width: inherit;
+        border-radius: 0;
+        left:0;
+        top:0;
+        text-align: center !important;
+        padding: 5px 10px;
+    }
+    .view-creditos .views_slideshow_cycle_teaser_section {
+        width: 100% !important;
+    }
+    .view-creditos .views_slideshow_cycle_slide {
+        width: 100% !important;
+    }
+    .view-creditos .views-field-field-imagen img {
+        width: 100% !important;
+    }
+
+    #display-simulator {
+        position: relative;
+        top: 83px;
+        right: auto;
+    }
+
+    #block-creditos {
+        position: relative;
+        top: 5px;
+    }
+    .table-dpf {
+        width:100%;
+    }
+    .table-dpf td{
+        width:100%;
+    }
+
+    #block-formulariocreditos {
+        position: relative;
+        top: 10px;
+    }
+
+    #views_slideshow_cycle_div_creditos-block_1_2 {
+        width: 300px;
+    }
+    #views_slideshow_cycle_div_creditos-block_1_1 {
+        width: 300px;
+    }
+    #views_slideshow_cycle_div_creditos-block_1_0 {
+
+    }
+
+    .inputs {
+        top: -420px;
+        width: 100%;
+    }
+
+    #block-formulariocreditos, #block-formulariocreditos div {
+        height: 420px;
+    }
+
+    table.results-table {
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        min-width: 50px !important;
+        table-layout: initial;
+    }
+    table.results-table caption {
+        font-size: 1em;
+        margin: .5em 0 .75em;
+    }
+    table.results-table tr {
+        padding: 0 !important;
+    }
+    table.results-table th,
+    table.results-table td {
+        padding: 0 !important;
+        text-align: center;
+        min-width: 10px;
+    }
+    table.results-table th {
+        font-size: .85em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+
+    table.results-table {
+        border: 0;
+    }
+    table.results-table caption {
+        font-size: 1.3em;
+    }
+    table.results-table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        width: 1px;
+    }
+    table.results-table tr {
+        display: block;
+        margin-bottom: .625em;
+    }
+    table.results-table td {
+        display: inherit;
+        min-width: unset;
+        font-size: .8em;
+        text-align: right;
+    }
+    table.results-table td:before {
+        /*!*!*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        *!*!*/
+        content: inherit;
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    table.results-table td:last-child {
+        border-bottom: 0;
+    }
+
+    /********************
+    DPfs
+    ********************/
+
+
+    #block-formulariocreditos {
+        position: relative;
+        top: 10px;
+    }
+
+    #views_slideshow_cycle_div_creditos-block_1_2 {
+        width: 300px;
+    }
+    #views_slideshow_cycle_div_creditos-block_1_1 {
+        width: 300px;
+    }
+    #views_slideshow_cycle_div_creditos-block_1_0 {
+
+    }
+
+    .inputs-dpf {
+        position: relative;
+        top: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    #block-formulariodpfs, #block-formulariodpfs div {
+        height: 420px;
+    }
+
+    #block-formulariocajadeahorros, #block-formulariocajadeahorros div {
+        height: 420px;
+    }
+
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
