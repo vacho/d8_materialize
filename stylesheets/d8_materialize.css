@@ -31883,7 +31883,7 @@ article ul li::before {
     color:#388E3C;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
 
     /***********************
     HEADER
@@ -32861,6 +32861,10 @@ select {
         margin: 0 0em;
     }
 
+    article {
+        padding: 0 10px;
+    }
+
     /***************
     HEADER
     *****************/
@@ -33223,13 +33227,93 @@ select {
         height: 420px;
     }
 
+    /**********************
+    AGENCIAS
+    *****************************/
+    #block-d8-materialize-content {
+        padding: 0 5px;
+    }
+
+    .view-agencias .views-col{
+        width: 100% !important;
+        padding: 10px;
+    }
+
+    .view-agencias .views-field-field-foto-mimiatura {
+        width: 100%;
+        text-align: center;
+    }
+
+    .view-agencias .views-field-field-foto-mimiatura img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .view-agencias .views-field-title,
+    .view-agencias .views-field-field-direccion,
+    .view-agencias .views-field-field-telefonos,
+    .view-agencias .views-field-field-fax,
+    .view-agencias .views-field-field-casilla,
+    .view-agencias .views-field-field-correo-electronico,
+    .view-agencias .views-field-field-horarios-lunes-a-viernes,
+    .view-agencias .views-field-field-horarios-sabado,
+    .view-agencias .views-field-field-coordenadas{
+        width: 100%;
+        text-align: left;
+        padding: 0 0 0 20px;
+    }
+
+    /* MENU */
+    #block-d8-materialize-main-menu .side-nav {
+        background-color: #388E3C;
+    }
+    #block-d8-materialize-main-menu .side-nav a {
+        height: 40px;
+        color:white;
+    }
+
+    #block-d8-materialize-main-menu .side-nav ul:hover,
+    #block-d8-materialize-main-menu .side-nav li:hover,
+    #block-d8-materialize-main-menu .side-nav a:hover{
+        background-color: #388E3C;
+        color: #AED581;
+    }
+
+    #block-d8-materialize-main-menu .side-nav a:active{
+        background-color: #388E3C;
+        color: #AED581;
+    }
+
+
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .row .col.s12 {
+        padding:0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container .row {
+        margin: 0 0em;
+    }
+
+    .row .l-content-full{
+        margin: 0 0em;
+    }
+
+    /**************
+    HEADER
+    ***************/
     .branding-block {
         display: none;
     }
 
+    /*************
+    SLIDER
+    ***************/
     .views_slideshow_cycle_teaser_section {
         width: 100% !important;
         height: 400px;
@@ -33251,6 +33335,7 @@ select {
         top: -55px;
         min-height: 1.5em;
         background-color: #388E3C;
+        text-align: center;
     }
 
     .views_slideshow_cycle_teaser_section .views-field-body {
@@ -33258,6 +33343,65 @@ select {
         position: relative;
         top: -70px;
         min-height: 10em;
+        text-align: center;
+    }
+
+    /**********************
+    CREDITOS, DPF, CAJA DE AHORROS
+    ************************/
+    #block-views-block-creditos-block {
+        top:0;
+        width:100%;
+    }
+    .view-creditos .views-field-title{
+        position:relative;
+        width: 100%;
+        max-width: inherit;
+        border-radius: 0;
+        left:0;
+        top:0;
+        text-align: center !important;
+        padding: 5px 10px;
+    }
+    .view-creditos .views_slideshow_cycle_teaser_section {
+        width: 100% !important;
+    }
+    .view-creditos .views_slideshow_cycle_slide {
+        width: 100% !important;
+    }
+    .view-creditos .views-field-field-imagen img {
+        width: 60% !important;
+    }
+
+    .inputs-dpf {
+        width: 180px !important;
+        top: 70px;
+    }
+    .inputs-dpf .title{
+        padding: 0 0 5px 0;
+    }
+
+    .background-image img {
+        height: 375px;
+    }
+
+    .inputs-dpf input:not([type]), .inputs-dpf input[type="text"], .inputs-dpf input[type="password"],
+    .inputs-dpf input[type="email"], .inputs-dpf input[type="url"], .inputs-dpf input[type="time"],
+    .inputs-dpf input[type="date"], .inputs-dpf input[type="datetime-local"], .inputs-dpf input[type="tel"],
+    .inputs-dpf input[type="number"], .inputs-dpf input[type="search"], .inputs-dpf textarea.materialize-textarea {
+        height: auto;
+    }
+
+    #block-formulariocreditos, #block-formulariocreditos div {
+        height: 500px !important;
+    }
+
+    #block-formulariodpfs, #block-formulariodpfs div {
+        height: 500px;
+    }
+
+    #block-formulariocajadeahorros, #block-formulariocajadeahorros div {
+        height: 500px;
     }
 
 }

@@ -54,7 +54,22 @@
 </ul>
 <ul class="side-nav" id="mobile-demo">
   {% for item in items %}
-    {{ menu.rendli(item) }}
+    {% if item.is_expanded %}
+      <li >
+        {{ link(item.title, item.url) }}
+        <ul >
+          {% for item_below in item.below %}
+            <li >
+              {{ link(item_below.title, item_below.url) }}
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% else %}
+      <li >
+        {{ link(item.title, item.url) }}
+      </li>
+    {% endif %}
   {% endfor %}
 </ul>
 
