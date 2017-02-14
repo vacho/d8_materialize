@@ -32968,39 +32968,39 @@ select {
     TABLAS
     *******************/
 
-    table {
+    table:not(.results-table) {
         border-collapse: collapse;
         margin: 0;
         padding: 0;
         min-width: 250px !important;
         table-layout: fixed;
     }
-    table caption {
+    table:not(.results-table) caption {
         font-size: 1.5em;
         margin: .5em 0 .75em;
     }
-    table tr {
+    table:not(.results-table) tr {
         padding: 0 !important;
     }
-    table th,
-    table td {
+    table:not(.results-table) th,
+    table:not(.results-table) td {
         padding: 0 !important;
         text-align: center;
         min-width: 240px !important;
     }
-    table th {
+    table:not(.results-table) th {
         font-size: .85em;
         letter-spacing: .1em;
         text-transform: uppercase;
     }
 
-    table {
+    table:not(.results-table) {
             border: 0;
     }
-    table caption {
+    table:not(.results-table) caption {
         font-size: 1.3em;
     }
-    table thead {
+    table:not(.results-table) thead {
         border: none;
         clip: rect(0 0 0 0);
         height: 1px;
@@ -33010,27 +33010,31 @@ select {
         position: absolute;
         width: 1px;
     }
-    table tr {
+    table:not(.results-table) tr {
         display: block;
         margin-bottom: .625em;
     }
-    table td {
+    table:not(.results-table) td {
         display: block;
         font-size: .8em;
         text-align: left;
     }
-    table td:before {
-        /*!*
+    table:not(.results-table) td:before {
+        /*/*
         * aria-label has no advantage, it won't be read inside a table
         content: attr(aria-label);
-        *!*/
+        */
         content: attr(data-label);
         float: left;
         font-weight: bold;
         text-transform: uppercase;
     }
-    table td:last-child {
+    table:not(.results-table) td:last-child {
         border-bottom: 0;
+    }
+
+    .results-table td {
+        padding: 0 3px;
     }
 
     /********************
@@ -33065,6 +33069,9 @@ select {
         top:0;
         width:100%;
     }
+    #block-views-block-creditos-block + #block-d8-materialize-content {
+        top: -30px;
+    }
     .view-creditos .views-field-title{
         position:relative;
         width: 100%;
@@ -33087,8 +33094,9 @@ select {
 
     #display-simulator {
         position: relative;
-        top: 83px;
+        top: 25px;
         right: auto;
+        width: 100%;
     }
 
     #block-creditos {
@@ -33124,72 +33132,6 @@ select {
 
     #block-formulariocreditos, #block-formulariocreditos div {
         height: 420px;
-    }
-
-    table.results-table {
-        border-collapse: collapse;
-        margin: 0;
-        padding: 0;
-        min-width: 50px !important;
-        table-layout: initial;
-    }
-    table.results-table caption {
-        font-size: 1em;
-        margin: .5em 0 .75em;
-    }
-    table.results-table tr {
-        padding: 0 !important;
-    }
-    table.results-table th,
-    table.results-table td {
-        padding: 0 !important;
-        text-align: center;
-        min-width: 10px;
-    }
-    table.results-table th {
-        font-size: .85em;
-        letter-spacing: .1em;
-        text-transform: uppercase;
-    }
-
-    table.results-table {
-        border: 0;
-    }
-    table.results-table caption {
-        font-size: 1.3em;
-    }
-    table.results-table thead {
-        border: none;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: relative;
-        width: 1px;
-    }
-    table.results-table tr {
-        display: block;
-        margin-bottom: .625em;
-    }
-    table.results-table td {
-        display: inherit;
-        min-width: unset;
-        font-size: .8em;
-        text-align: right;
-    }
-    table.results-table td:before {
-        /*!*!*
-        * aria-label has no advantage, it won't be read inside a table
-        content: attr(aria-label);
-        *!*!*/
-        content: inherit;
-        float: left;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    table.results-table td:last-child {
-        border-bottom: 0;
     }
 
     /********************
@@ -33349,6 +33291,12 @@ select {
     /**********************
     CREDITOS, DPF, CAJA DE AHORROS
     ************************/
+    #block-creditos {
+        top: 0px;
+    }
+    #block-formulariocreditos {
+        top:0px;
+    }
     #block-views-block-creditos-block {
         top:0;
         width:100%;
@@ -33369,8 +33317,31 @@ select {
     .view-creditos .views_slideshow_cycle_slide {
         width: 100% !important;
     }
+
+    #views_slideshow_cycle_teaser_section_creditos-block_1{
+        height: 600px !important;
+    }
+
+    .view-creditos .views-field-field-imagen{
+        width: 250px;
+        top: 40px;
+        display: none;
+    }
     .view-creditos .views-field-field-imagen img {
-        width: 60% !important;
+        width: 255px !important;
+        height: 310px !important;
+    }
+
+    .view-creditos .views-field-body {
+        min-width: 768px;
+        width: 100%;
+        background-color: transparent;
+        top: 0px;
+        float: none;
+        text-align: justify;
+    }
+    .view-creditos .views-field-body .field-content{
+        width: 100%;
     }
 
     .inputs-dpf {
@@ -33403,6 +33374,8 @@ select {
     #block-formulariocajadeahorros, #block-formulariocajadeahorros div {
         height: 500px;
     }
+
+
 
 }
 
